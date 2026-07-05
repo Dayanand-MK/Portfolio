@@ -137,7 +137,7 @@ const DATA = {
       desc: "Full-stack ML web app (FastAPI + React) recommending optimal crops using soil and climate inputs, with Explainable AI, live Mandi prices, and financial yield analysis. Deployed on Google Cloud Run.",
       tags: ["ai-ml", "web"],
       tech: ["Python", "FastAPI", "React", "Tailwind CSS", "Random Forest", "Scikit-learn", "Docker", "Google Cloud Run"],
-      thumbnail: "AgroSage.png",
+      thumbnail: "Agrosage.png",
       github: "https://github.com/Dayanand-MK/AgroSage-AI",
       demo: "https://agrosage-ai-1045649332725.us-central1.run.app",
       features: [
