@@ -119,7 +119,7 @@ const DATA = {
       desc: "Production-grade multimodal AI system processing video, audio, and text inputs for real-time emotion detection (6+ classes), age estimation, and gender prediction with <100 ms inference latency.",
       tags: ["ai-ml"],
       tech: ["Python", "PyTorch", "TensorFlow", "OpenCV", "NLP", "CK+ Dataset"],
-      thumbnail: "assets/images/SentimentX.png",
+      thumbnail: "SentimentX.png",
       github: "https://github.com/Dayanand-MK/SentimentX-A-Multimodal-AI-System-for-Emotion-Recognition",
       demo: null,
       features: [
@@ -137,7 +137,7 @@ const DATA = {
       desc: "Full-stack ML web app (FastAPI + React) recommending optimal crops using soil and climate inputs, with Explainable AI, live Mandi prices, and financial yield analysis. Deployed on Google Cloud Run.",
       tags: ["ai-ml", "web"],
       tech: ["Python", "FastAPI", "React", "Tailwind CSS", "Random Forest", "Scikit-learn", "Docker", "Google Cloud Run"],
-      thumbnail: "assets/images/AgroSage.png",
+      thumbnail: "AgroSage.png",
       github: "https://github.com/Dayanand-MK/AgroSage-AI",
       demo: "https://agrosage-ai-1045649332725.us-central1.run.app",
       features: [
@@ -156,7 +156,7 @@ const DATA = {
       desc: "End-to-end CNN pipeline classifying 38 plant disease classes from leaf images at 92% accuracy, deployed as a Streamlit web app for real-time agricultural inference.",
       tags: ["ai-ml"],
       tech: ["Python", "TensorFlow", "CNN", "VGG16", "ResNet50", "Transfer Learning", "Streamlit"],
-      thumbnail: "assets/images/Plant.png",
+      thumbnail: "Plant.png",
       github: "https://github.com/Dayanand-MK/Plant-Disease-Detection-System-For-Sustainable-Agriculture-",
       demo: null,
       features: [
