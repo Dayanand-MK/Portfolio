@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dayanand M K – AI & Machine Learning Engineer, Data Analyst, Software Developer.">
+  <meta name="keywords" content="AI, Machine Learning, Data Analyst, Software Developer, Portfolio, Dayanand">
+  <meta name="author" content="Dayanand M K">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Dayanand M K | AI & ML Engineer">
+  <meta property="og:description"
+    content="Portfolio of Dayanand M K — AI & ML Engineer, Data Analyst, Software Developer.">
+  <meta property="og:type" content="website">
+
+  <title>Dayanand M K | AI & ML Engineer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════════════
+       LOADING SCREEN
+  ═══════════════════════════════════════════════════ -->
+  <div id="loader" role="status" aria-label="Loading portfolio">
+    <div class="loader-logo">D<span>.</span>MK</div>
+    <div class="loader-bar-wrap">
+      <div class="loader-bar"></div>
+    </div>
+    <div class="loader-text">initializing portfolio...</div>
+  </div>
+
+  <!-- Custom Cursor (desktop only) -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-follower" id="cursor-follower" aria-hidden="true"></div>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress" role="progressbar" aria-label="Scroll progress"></div>
+
+  <!-- ═══════════════════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════════════════ -->
+  <header id="navbar" role="banner">
+    <div class="nav-inner">
+
+      <a href="#hero" class="nav-logo" id="logo-click" aria-label="Home">D<span>.</span>MK</a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#hero" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#internships">Internships</a>
+        <a href="#education">Education</a>
+        <a href="#certifications">Certs</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-right">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme"></button>
+        <a href="assets/Resume.pdf" download class="nav-resume-btn">
+          <i class="fa fa-download"></i> Resume
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile nav -->
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#internships">Internships</a>
+      <a href="#education">Education</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════════════ -->
+  <section id="hero" aria-label="Introduction">
+    <canvas class="hero-canvas" id="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero-inner">
+
+      <div class="hero-text">
+        <p class="hero-greeting">Hello, World!</p>
+        <h1 class="hero-name">
+          Hi, I'm<br>
+          <span class="accent" id="hero-name-accent"></span>
+        </h1>
+        <div class="hero-role" aria-live="polite">
+          I'm a <span id="typed-text"></span><span class="typed-cursor" aria-hidden="true">|</span>
+        </div>
+        <p class="hero-bio" id="hero-bio"></p>
+        <div class="hero-buttons">
+          <a href="assets/Resume.pdf" download class="btn-primary">
+            <i class="fa fa-file-arrow-down"></i> View Resume
+          </a>
+          <a href="#contact" class="btn-outline">
+            <i class="fa fa-envelope"></i> Contact Me
+          </a>
+        </div>
+        <div class="hero-socials" aria-label="Social links">
+          <a href="https://github.com/Dayanand-MK" target="_blank" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/dayanand-mk/" target="_blank" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://leetcode.com/u/IeSgoZEeWM/" target="_blank" aria-label="LeetCode">
+            <i class="fa-solid fa-code"></i>
+          </a>
+          <a href="https://www.hackerrank.com/profile/dayanandmk_dev" target="_blank" aria-label="HackerRank">
+            <i class="fa-brands fa-hackerrank"></i>
+          </a>
+          <a href="mailto:dayanandmk.dev@gmail.com" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+        <div class="hero-stats" id="hero-stats"></div>
+      </div>
+
+      <div class="hero-image-wrap" aria-hidden="true">
+        <div class="hero-img-ring">
+          <div class="hero-img-inner">
+            <img src="assets/images/profile.jpg" alt="Dayanand M K">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════════════════════ -->
+  <section id="about" aria-label="About me">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">About Me</p>
+        <h2 class="section-title">Crafting AI Solutions,<br>One Model at a Time</h2>
+      </div>
+      <div class="about-grid">
+
+        <!-- Left card -->
+        <div class="about-card reveal-left">
+          <div class="about-img-block">
+            <img src="assets/images/profile.jpg" alt="Dayanand M K">
+          </div>
+          <div style="margin-top:2.4rem">
+            <div class="info-list">
+              <div class="info-item">
+                <i class="fa fa-location-dot" aria-hidden="true"></i>
+                <span id="info-location"></span>
+              </div>
+              <div class="info-item">
+                <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                <span>B.E. Computer Science (AI &amp; ML)</span>
+              </div>
+              <div class="info-item">
+                <i class="fa fa-briefcase" aria-hidden="true"></i>
+                <span>Open to Opportunities</span>
+              </div>
+              <div class="info-item">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span id="info-email"></span>
+              </div>
+            </div>
+            <a href="assets/Resume.pdf" download class="btn-primary">
+              <i class="fa fa-download"></i> Download Resume
+            </a>
+          </div>
+        </div>
+
+        <!-- Right card -->
+        <div class="about-details reveal-right">
+          <div class="about-card">
+            <div id="about-bio"></div>
+            <div style="margin:2.4rem 0">
+              <p class="section-label" style="margin-bottom:1.2rem">Core Strengths</p>
+              <div class="about-strengths" id="about-strengths"></div>
+            </div>
+            <p class="section-label" style="margin-bottom:.8rem">Currently Focused On</p>
+            <p id="about-focus" style="font-size:1.65rem;color:var(--text2);line-height:1.8"></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       SKILLS
+  ═══════════════════════════════════════════════════ -->
+  <section id="skills" aria-label="Skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Technical Skills</p>
+        <h2 class="section-title">Tools &amp; Technologies</h2>
+        <p class="section-sub">A curated stack built through projects, internships, and relentless learning.</p>
+      </div>
+      <div class="skills-grid" id="skills-grid"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       TECH STACK MARQUEE
+  ═══════════════════════════════════════════════════ -->
+  <section id="tech" aria-label="Tech stack">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Tech Stack</p>
+        <h2 class="section-title">Technologies I Work With</h2>
+      </div>
+    </div>
+    <div class="tech-scroll" aria-hidden="true">
+      <div class="tech-track" id="tech-track"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       PROJECTS
+  ═══════════════════════════════════════════════════ -->
+  <section id="projects" aria-label="Projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Projects</p>
+        <h2 class="section-title">What I've Built</h2>
+        <p class="section-sub">A selection of projects showcasing my skills across AI/ML, web development, and data
+          analytics.</p>
+      </div>
+
+      <div class="projects-controls reveal" role="group" aria-label="Project filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ai-ml">AI / ML</button>
+        <button class="filter-btn" data-filter="web">Web Dev</button>
+        <button class="filter-btn" data-filter="data">Data Analytics</button>
+        <div class="search-wrap">
+          <i class="fa fa-magnifying-glass" aria-hidden="true"></i>
+          <input type="search" id="project-search" placeholder="Search projects…" aria-label="Search projects">
+        </div>
+      </div>
+
+      <div class="projects-grid" id="projects-grid" role="list"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       INTERNSHIPS
+  ═══════════════════════════════════════════════════ -->
+  <section id="internships" aria-label="Internships">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Experience</p>
+        <h2 class="section-title">Internships</h2>
+        <p class="section-sub">Real-world experience that shaped my engineering perspective.</p>
+      </div>
+      <div class="timeline" id="timeline"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       EDUCATION
+  ═══════════════════════════════════════════════════ -->
+  <section id="education" aria-label="Education">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Education</p>
+        <h2 class="section-title">Academic Background</h2>
+      </div>
+      <div class="edu-grid" id="edu-grid"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       CERTIFICATIONS
+  ═══════════════════════════════════════════════════ -->
+  <section id="certifications" aria-label="Certifications">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Certifications</p>
+        <h2 class="section-title">Credentials &amp; Courses</h2>
+        <p class="section-sub">Verified credentials from industry-leading platforms.</p>
+      </div>
+      <div class="certs-grid" id="certs-grid"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       ACHIEVEMENTS
+  ═══════════════════════════════════════════════════ -->
+  <section id="achievements" aria-label="Achievements">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Achievements</p>
+        <h2 class="section-title">Milestones &amp; Recognition</h2>
+      </div>
+      <div class="achievements-grid" id="achievements-grid"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       CODING PROFILES
+  ═══════════════════════════════════════════════════ -->
+  <section id="coding-profiles" aria-label="Coding profiles">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Coding Profiles</p>
+        <h2 class="section-title">Where I Practice &amp; Compete</h2>
+      </div>
+      <div class="profiles-grid" id="profiles-grid"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       GITHUB
+  ═══════════════════════════════════════════════════ -->
+  <section id="github" aria-label="GitHub contributions">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">GitHub</p>
+        <h2 class="section-title">Open Source &amp; Contributions</h2>
+      </div>
+      <div class="github-section reveal">
+        <div class="github-header">
+          <i class="fa-brands fa-github" aria-hidden="true"></i>
+          <h3>GitHub Activity</h3>
+        </div>
+        <div class="github-stats" id="github-stats"></div>
+        <div class="github-btn-wrap">
+          <a href="#" id="github-profile-btn" target="_blank" rel="noopener" class="btn-primary">
+            <i class="fa-brands fa-github"></i> View GitHub Profile
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       CURRENTLY LEARNING
+  ═══════════════════════════════════════════════════ -->
+  <section id="learning" style="background:var(--bg2)" aria-label="Currently learning">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Currently Learning</p>
+        <h2 class="section-title">Always Growing</h2>
+        <p class="section-sub">Technologies I'm actively exploring and building with right now.</p>
+      </div>
+      <div class="learning-grid" id="learning-grid"></div>
+    </div>
+  </section>
+
+
+
+  <!-- ═══════════════════════════════════════════════════
+       FAQ
+  ═══════════════════════════════════════════════════ -->
+  <section id="faq" style="background:var(--bg2)" aria-label="FAQ">
+    <div class="container">
+      <div class="section-header reveal" style="text-align:center">
+        <p class="section-label">FAQ</p>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-list" id="faq-list" role="list"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       CONTACT
+  ═══════════════════════════════════════════════════ -->
+  <section id="contact" aria-label="Contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Get In Touch</p>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-sub">Whether it's an opportunity, a collaboration, or just a hello — my inbox is open.</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Contact info -->
+        <div class="contact-info reveal-left">
+          <a href="mailto:dayanandmk.dev@gmail.com" class="contact-item" style="text-decoration:none">
+            <div class="contact-item-icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+            <div>
+              <div class="contact-item-label">Email</div>
+              <div class="contact-item-value">dayanandmk.dev@gmail.com</div>
+            </div>
+          </a>
+          <a href="tel:+918056727034" class="contact-item" style="text-decoration:none">
+            <div class="contact-item-icon"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></div>
+            <div>
+              <div class="contact-item-label">Phone / WhatsApp</div>
+              <div class="contact-item-value">+91-8056727034</div>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/dayanand-mk/" target="_blank" class="contact-item"
+            style="text-decoration:none">
+            <div class="contact-item-icon"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></div>
+            <div>
+              <div class="contact-item-label">LinkedIn</div>
+              <div class="contact-item-value">linkedin.com/in/dayanand-mk</div>
+            </div>
+          </a>
+          <a href="https://github.com/Dayanand-MK" target="_blank" class="contact-item" style="text-decoration:none">
+            <div class="contact-item-icon"><i class="fa-brands fa-github" aria-hidden="true"></i></div>
+            <div>
+              <div class="contact-item-label">GitHub</div>
+              <div class="contact-item-value">github.com/Dayanand-MK</div>
+            </div>
+          </a>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fa fa-location-dot" aria-hidden="true"></i></div>
+            <div>
+              <div class="contact-item-label">Location</div>
+              <div class="contact-item-value">Avadi, Chennai, Tamil Nadu</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact form -->
+        <div class="contact-form reveal-right" role="form" aria-label="Contact form">
+          <div class="form-grid">
+            <div class="form-group">
+              <label class="form-label" for="f-name">Full Name *</label>
+              <input class="form-input" type="text" id="f-name" placeholder="Your name" autocomplete="name">
+              <div class="form-error" id="err-name">Please enter your name.</div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="f-email">Email *</label>
+              <input class="form-input" type="email" id="f-email" placeholder="your@email.com" autocomplete="email">
+              <div class="form-error" id="err-email">Please enter a valid email.</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="f-subject">Subject *</label>
+            <input class="form-input" type="text" id="f-subject" placeholder="What's this about?">
+            <div class="form-error" id="err-subject">Please enter a subject.</div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="f-message">Message *</label>
+            <textarea class="form-textarea" id="f-message" placeholder="Write your message here…"></textarea>
+            <div class="form-error" id="err-message">Please enter a message.</div>
+          </div>
+          <button class="btn-primary" id="contact-submit" style="width:100%;justify-content:center;border:none">
+            <i class="fa fa-paper-plane"></i> Send Message
+          </button>
+          <div class="form-msg" id="form-msg" role="alert"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-top">
+
+        <div class="footer-brand">
+          <div class="footer-logo">D<span>.</span>MK</div>
+          <p>AI &amp; ML Engineer building intelligent systems and meaningful products.</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="font-size:1.4rem;font-weight:600;color:var(--text);margin-bottom:1.6rem">Connect</h4>
+          <div class="footer-social" aria-label="Social links">
+            <a href="https://github.com/Dayanand-MK" target="_blank" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/dayanand-mk/" target="_blank" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://leetcode.com/u/IeSgoZEeWM/" target="_blank" aria-label="LeetCode">
+              <i class="fa-solid fa-code"></i>
+            </a>
+            <a href="https://tech-terminus.blogspot.com/" target="_blank" aria-label="Blog">
+              <i class="fa-solid fa-pen-nib"></i>
+            </a>
+            <a href="mailto:dayanandmk.dev@gmail.com" aria-label="Email">
+              <i class="fa fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2025 <span>Dayanand M K</span>. Built with passion &amp; precision.</p>
+        <a href="#hero" class="back-top" aria-label="Back to top">
+          <i class="fa fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to top floating button -->
+  <button id="scroll-top" aria-label="Scroll to top">
+    <i class="fa fa-arrow-up"></i>
+  </button>
+
+  <!-- ═══════════════════════════════════════════════════
+       PROJECT MODAL
+  ═══════════════════════════════════════════════════ -->
+  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-label="Project details">
+    <div class="modal-box" id="modal-box">
+      <button class="modal-close" id="modal-close" aria-label="Close">
+        <i class="fa fa-xmark"></i>
+      </button>
+      <div id="modal-content-inner"></div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════
+       EASTER EGG
+  ═══════════════════════════════════════════════════ -->
+  <div id="easter-egg" role="dialog" aria-modal="true" aria-label="Developer mode">
+    <div class="egg-box">
+      <div class="egg-title">🎉 Developer Mode</div>
+      <div class="egg-sub">// You found the easter egg!</div>
+      <div class="egg-stats">
+        <div class="egg-stat">
+          <div class="egg-stat-n">☕ ∞</div>
+          <div class="egg-stat-l">Coffees Consumed</div>
+        </div>
+        <div class="egg-stat">
+          <div class="egg-stat-n">15+</div>
+          <div class="egg-stat-l">Projects Shipped</div>
+        </div>
+        <div class="egg-stat">
+          <div class="egg-stat-n">48h</div>
+          <div class="egg-stat-l">Longest Hackathon</div>
+        </div>
+        <div class="egg-stat">
+          <div class="egg-stat-n">1000+</div>
+          <div class="egg-stat-l">Coding Hours</div>
+        </div>
+      </div>
+      <button class="egg-close" id="egg-close-btn">Close Portal</button>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════
+       SCRIPTS  (data first, then logic)
+  ═══════════════════════════════════════════════════ -->
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
