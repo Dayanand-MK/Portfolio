@@ -100,7 +100,7 @@ const DATA = {
       desc: "AI-powered enterprise document auditing platform that scans files for PII, financial records & credentials, generates compliance risk scores, produces security audit reports, and provides a RAG-based chat assistant.",
       tags: ["ai-ml"],
       tech: ["Python", "SpaCy", "ChromaDB", "HuggingFace", "Qwen2.5-7B", "RAG", "Streamlit", "Docker"],
-      thumbnail: "assets/images/MSentinel.png",
+      thumbnail: "MSentinel.png",
       github: "https://github.com/Dayanand-MK/MSentinel_AI",
       demo: "https://msentinel-ai.streamlit.app/",
       features: [
